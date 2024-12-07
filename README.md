@@ -1,29 +1,5 @@
-# no time to code now so it will stay here for today
+#thyn
 
-# Folder structure
+![image](https://github.com/user-attachments/assets/e8986fc9-e787-4f3f-94ae-dc493e61d15e)
 
-- `src` - source code for your kaplay project
-- `www` - distribution folder, contains your index.html, built js bundle and static assets
-
-
-## Development
-
-```sh
-$ pnpm run dev
-```
-
-will start a dev server at http://localhost:8000
-
-## Distribution
-
-```sh
-$ pnpm run build
-```
-
-will build your js files into `www/main.js`
-
-```sh
-$ pnpm run bundle
-```
-
-will build your game and package into a .zip file, you can upload to your server or itch.io / newground etc.
+tiny logo lol needing to make the game tonight
