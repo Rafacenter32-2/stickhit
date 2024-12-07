@@ -1,3 +1,5 @@
+# no time to code now so it will stay here for today
+
 # Folder structure
 
 - `src` - source code for your kaplay project
