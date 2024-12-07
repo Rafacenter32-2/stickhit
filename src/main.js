@@ -66,9 +66,3 @@ const stick = ({
 }
 return {circle, stick}
 }
-stick({
-    islogo: true,
-    position:center(),
-    scale:10,
-    color:BLUE,
-})
