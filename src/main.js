@@ -3,7 +3,7 @@ import kaplay from "kaplay";
 import "kaplay/global";
  
 const k = kaplay()
-//TODO: separate diferent sectors to different files
+//TODO: separate code to different files
 //? how to do this
 /**
  * image load
