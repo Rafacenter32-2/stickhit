@@ -11,6 +11,11 @@ k.scene("logo",() => {
         isrightstick:false
     })
     function beep() {
-        
+        logo.circle.animate("scale",[vec2(0.29),vec2(0.3)],{
+            duration:60/500,
+            direction:"ping-pong",
+            easing:easings.easeOutCubic
+        })
     }
+    beep()
 })

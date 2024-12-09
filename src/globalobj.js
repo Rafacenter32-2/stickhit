@@ -42,12 +42,25 @@ const stick = ({
         anchor("center"),
         pos(0,0),
         area(),
+        animate(),
+        opacity(1),
         {  click:false }
     ])
     //scripts
     onUpdate(()=>{
+        const { abs } = Math
         stick.pos.x = getGamepadStick('left').x *((1280/2)-(384/2))
         stick.pos.y = getGamepadStick('left').y *((1280/2)-(384/2))
+        /*
+        if (abs(getGamepadStick('left').x) + abs(getGamepadStick('left').y) + 0.3 > 1.1) {
+            
+            stick.opacity = 1
+        } else {
+            stick.opacity = abs(getGamepadStick('left').x) + abs(getGamepadStick('left').y) + 0.3
+        }
+            was what i would code if i was me! 5 seconds ago*/
+        let temp = abs(getGamepadStick('left').x) + abs(getGamepadStick('left').y) + 0.3
+        stick.opacity = (temp < 1) ? temp:1
     })
     onGamepadButtonPress('lshoulder',()=>{
         stick.click = true
