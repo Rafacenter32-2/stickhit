@@ -4,6 +4,14 @@ import "../../assets.js"
 import * as globalobjs from "../../objs/stick.js"
 import * as buttons from "../../objs/buttons.js"
 k.scene("logo",() => {
+    let camrotate = true
+    onUpdate(()=>{
+        //cam anim
+        if (camrotate) {
+            camRot(Math.sin(time()*1)*2)
+        }
+    })
+
     const logo = globalobjs.stick({
         color:null,
         position:center(),
@@ -27,6 +35,12 @@ buttons.ring_menu({
     },
     size:170,
     color:BLUE,
+})
+logo.stick.onCollide("mainbutton",(obj)=>{
+    obj.scaleTo(1.1)
+})
+logo.stick.onCollideEnd("mainbutton",(obj)=>{
+    obj.scaleTo(1)
 })
 
 })

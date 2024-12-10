@@ -10,8 +10,9 @@ const ring_menu = ({ size,pos:{x,y},color })=>{
         ,k.color(color)
         ,k.outline(30,color,0.5)
         ,k.area()
+        ,k.scale(1)
+        ,"mainbutton"
     ])
-
     return { button, }
 }
 
