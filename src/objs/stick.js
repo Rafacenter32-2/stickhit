@@ -1,6 +1,6 @@
 //@ts-check
-import { k } from "./engine.js"
-import "./assets.js"
+import { k } from "../engine.js"
+import "../assets.js"
 /**
  *  
  * @param {Object} param0 
@@ -44,7 +44,7 @@ const stick = ({
         area(),
         animate(),
         opacity(1),
-        {  click:false }
+        {  click:false, }
     ])
     //scripts
     onUpdate(()=>{

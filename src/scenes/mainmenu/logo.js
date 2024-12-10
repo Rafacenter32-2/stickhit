@@ -1,7 +1,8 @@
 //@ts-check
 import { k } from "../../engine.js"
 import "../../assets.js"
-import * as globalobjs from "../../globalobj.js"
+import * as globalobjs from "../../objs/stick.js"
+import * as buttons from "../../objs/buttons.js"
 k.scene("logo",() => {
     const logo = globalobjs.stick({
         color:null,
@@ -18,4 +19,14 @@ k.scene("logo",() => {
         })
     }
     beep()
+
+buttons.ring_menu({
+    pos:{
+        x:center().x + 260,
+        y:center().y
+    },
+    size:170,
+    color:BLUE,
+})
+
 })
