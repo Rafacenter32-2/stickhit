@@ -12,9 +12,6 @@ export const k = kaplay({
         right:  {
             gamepad:["rshoulder","rtrigger","south"]
         },
-        a:{
-            
-        }
     },
     letterbox:true,
     width:1366,
