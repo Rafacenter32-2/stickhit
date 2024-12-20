@@ -4,11 +4,16 @@ import "kaplay/global";
  
 export const k = kaplay({
     buttons: {
-        left:{
-            gamepad:["lshoulder","ltrigger","west"]
+        left:   {
+            gamepad:["lshoulder","ltrigger","west"],
+            keyboard:["space"],
+            
         },
-        right:{
+        right:  {
             gamepad:["rshoulder","rtrigger","south"]
+        },
+        a:{
+            
         }
     },
     letterbox:true,

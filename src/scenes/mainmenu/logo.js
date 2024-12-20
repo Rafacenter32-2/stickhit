@@ -10,6 +10,7 @@ k.scene("logo", () => {
     if (camrotate) {
       camRot(Math.sin(time() * 1) * 2);
     }
+    debug.log(k.isButtonPressed("left"))
   });
 
   const logo = globalobjs.stick({
@@ -49,8 +50,9 @@ k.scene("logo", () => {
     obj.scaleTo(1);
   });
   logo.stick.onCollideUpdate("ringbutton", (obj) =>{
-    if (isGamepadButtonPressed("lshoulder")) {
+    if (isButtonPressed("left")) {
         obj.callback()
     }
   })
+  
 });
